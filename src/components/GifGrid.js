@@ -18,8 +18,8 @@ export const GifGrid = ({ category }) => {
             
                     {
                         images.map( img => (
-                            <GifGridItem { ...img }
-                            key={ img.id }
+                            <GifGridItem key={ img.id }
+                            { ...img }
                             />
                             ))
                         }
